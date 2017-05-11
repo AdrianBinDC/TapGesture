@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rick.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sqa-Gn-J9W">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgj-Ah-2st">
+                                <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8e-ib-2Ha">
+                                        <rect key="frame" x="125.5" y="8" width="124" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOz-3c-DVW">
+                                        <rect key="frame" x="8" y="37" width="359" height="288"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">We're no strangers to love
+You know the rules and so do I
+A full commitment's what I'm thinking of
+You wouldn't get this from any other guy
+
+I just want to tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+We've known each other for so long
+Your heart's been aching but you're too shy to say it
+Inside we both know what's been going on
+We know the game and we're gonna play it
+
+And if you ask me how I'm feeling
+Don't tell me you're too blind to see
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+We've known each other for so long
+Your heart's been aching but you're too shy to say it
+Inside we both know what's been going on
+We know the game and we're gonna play it
+
+I just want to tell you how I'm feeling
+Gotta make you understand
+
+Never gonna give you up, never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry, never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Written by Mike Stock, Matt Aitken, Peter Waterman • Copyright © Sony/ATV Music Publishing LLC, Universal Music Publishing Group
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dOz-3c-DVW" firstAttribute="trailing" secondItem="lgj-Ah-2st" secondAttribute="trailingMargin" id="MZQ-ZD-Fj9"/>
+                                    <constraint firstItem="dOz-3c-DVW" firstAttribute="bottom" secondItem="lgj-Ah-2st" secondAttribute="bottomMargin" id="NuM-Tn-NMC"/>
+                                    <constraint firstItem="dOz-3c-DVW" firstAttribute="leading" secondItem="lgj-Ah-2st" secondAttribute="leadingMargin" id="Tb4-t1-am1"/>
+                                    <constraint firstItem="dOz-3c-DVW" firstAttribute="top" secondItem="c8e-ib-2Ha" secondAttribute="bottom" constant="8" symbolic="YES" id="UIk-oD-8wE"/>
+                                    <constraint firstAttribute="height" constant="333" id="Zzz-NW-IDV"/>
+                                    <constraint firstItem="c8e-ib-2Ha" firstAttribute="top" secondItem="lgj-Ah-2st" secondAttribute="topMargin" id="cQv-om-mlG"/>
+                                    <constraint firstItem="c8e-ib-2Ha" firstAttribute="centerX" secondItem="dOz-3c-DVW" secondAttribute="centerX" id="gaK-UP-WiO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lgj-Ah-2st" secondAttribute="trailing" id="GmY-qW-RW8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lgj-Ah-2st" secondAttribute="bottom" id="Iv8-97-Jqe"/>
+                            <constraint firstItem="lgj-Ah-2st" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XUQ-HM-cTX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bioLabel" destination="c8e-ib-2Ha" id="TKy-KG-x8v"/>
+                        <outlet property="bioTextView" destination="dOz-3c-DVW" id="jqO-F2-MLd"/>
+                        <outlet property="bioView" destination="lgj-Ah-2st" id="0dG-EU-dZl"/>
+                        <outlet property="bioViewHeightConstraint" destination="Zzz-NW-IDV" id="2rL-nc-gZF"/>
+                        <outlet property="imageView" destination="Sqa-Gn-J9W" id="gKS-Ha-rmZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rick.jpg" width="2000" height="1000"/>
+    </resources>
+</document>
